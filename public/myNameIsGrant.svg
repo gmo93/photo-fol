@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504 57.54">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+        font-family: Arial-BoldMT, Arial;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_5" data-name="Layer 5">
+    <text class="cls-2" transform="translate(0 17.16)"><tspan x="0" y="0">M</tspan><tspan class="cls-1" x="16.66" y="0">Y</tspan><tspan x="29.64" y="0" xml:space="preserve"> NAME IS GRANT OMOHUNDRO</tspan><tspan class="cls-3" x="336.3" y="0"> </tspan><tspan x="341.11" y="0">AND I CAPTURE </tspan><tspan x="0" y="20">PHO</tspan><tspan class="cls-1" x="43.34" y="20">T</tspan><tspan x="55.2" y="20">OS.</tspan></text>
+  </g>
+</svg>
