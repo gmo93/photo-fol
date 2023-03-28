@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from './components/NavBar'
+import PhotoConst from './components/PhotoConst'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,16 +31,7 @@ export default function Home() {
             </div>
         </div>
         <div className = {styles.container}>
-            <div className={styles.home}>
-              <Image
-                className={styles.logo}
-                src="/omoLOGO.svg"
-                alt="OMO Photo Logo"
-                width={300}
-                height={300}
-                priority
-              />
-            </div>
+            <PhotoConst />
         </div>
       </main>
     </>
