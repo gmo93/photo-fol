@@ -1,13 +1,14 @@
+import {useState, useEffect} from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from './components/NavBar'
+import PhotoNavBar from './components/PhotoNavBar';
 import PhotoConst from './components/PhotoConst'
-
-const inter = Inter({ subsets: ['latin'] })
+import ContactForm from './components/ContactForm';
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -18,7 +19,8 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <NavBar />
-        <div className = {styles.container}>
+      <PhotoNavBar />
+        <div id="home" className = {styles.container}>
             <div className={styles.home}>
               <Image
                 className={styles.logo}
@@ -30,8 +32,14 @@ export default function Home() {
               />
             </div>
         </div>
-        <div className = {styles.container}>
+        <div id = "photos" className = {styles.container}>
             <PhotoConst />
+        </div>
+        <div id = "contact" className = {styles.container}>
+        <h1 id = "contactHeader" className = {styles.headerTest}>CONTACT</h1>
+            <div className={styles.contactBox}>
+              <ContactForm />
+            </div>
         </div>
       </main>
     </>
