@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <NavBar />
-      {scrollTop > 600 && <PhotoNavBar />}
+      {(scrollTop > 600 && scrollTop < 5200) && <PhotoNavBar />}
         <div id="home" className = {styles.container}>
             <div className={styles.home}>
               <Image
