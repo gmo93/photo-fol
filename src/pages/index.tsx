@@ -2,12 +2,27 @@ import {useState, useEffect} from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import NavBar from './components/NavBar'
-import PhotoNavBar from './components/PhotoNavBar';
 import PhotoConst from './components/PhotoConst'
 import ContactForm from './components/ContactForm';
+import NavBar from './components/NavBar'
+import PhotoNavBar from './components/PhotoNavBar';
 
 export default function Home() {
+
+  const [scrollTop, setScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollTop(window.scrollY);
+      console.log(scrollTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
 
   return (
     <>
@@ -19,7 +34,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <NavBar />
-      <PhotoNavBar />
+      {scrollTop > 600 && <PhotoNavBar />}
         <div id="home" className = {styles.container}>
             <div className={styles.home}>
               <Image

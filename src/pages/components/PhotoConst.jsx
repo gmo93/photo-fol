@@ -7,29 +7,29 @@ export default function PhotoConst() {
     const travelPhotos = ['canopy1.jpeg', 'canopy2.jpeg'];
     const artPhotos = ['jordanPainting1.jpeg', 'jordanPainting2.jpeg', 'peter.jpeg', 'peterAndChance.jpeg']
     const renderNames = (names) => {
-        return names.map(name => <img onClick={handleClick} alt = {name} key={name} className={styles.photo} width = {400} src = {name}/>)
+        return names.map(name => <img alt = {name} key={name} className={styles.photo} width = {400} src = {name}/>)
     }
-    const [modalOpen, setModalOpen] = useState(false);
-    const [bigImage, setBigImage] = useState();
-    const handleClick = (e) => {
-        let imageAlt = (e.target.alt).replaceAll('.jpeg', 'Big.jpeg');
-        setBigImage(imageAlt);
-        setModalOpen(true);
-    };
-    const handleClose = (e) => {
-        setModalOpen(false);
-    }
+    // const [modalOpen, setModalOpen] = useState(false);
+    // const [bigImage, setBigImage] = useState();
+    // const handleClick = (e) => {
+    //     let imageAlt = (e.target.alt).replaceAll('.jpeg', 'Big.jpeg');
+    //     setBigImage(imageAlt);
+    //     setModalOpen(true);
+    // };
+    // const handleClose = (e) => {
+    //     setModalOpen(false);
+    // }
 
     return (
         <div className = {styles.photoSection}>
-            { modalOpen && 
+            {/* { modalOpen && 
             <div className = {styles.modalContainer}>
                 <div onClick = {handleClose} className = {styles.modalBackground}></div>
                 <div onClick = {handleClose} className = {styles.photoModal}>
                     <img className = {styles.bigPhoto} src = {bigImage} />
                 </div>
             </div>
-            }
+            } */}
             <div id = "realestate">
                 <h1 className = {styles.headerTest}>REAL ESTATE</h1>
                 {renderNames(realEstatePhotos)}
