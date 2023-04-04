@@ -14,7 +14,7 @@
   align-items: center;
   width: 100vw;
   background-color: white;
-  height: 6vh;
+  height: 7vh;
   top: 0;
   z-index: 8;
   padding-right: 1vw;
@@ -29,7 +29,7 @@
   rotate: -0.5deg;
   background-color: black;
   height: 5vh;
-  top: 5vh;
+  top: 6vh;
   z-index: 10;
   padding-left: 1vw;
 }
@@ -105,38 +105,125 @@
   align-items: center;
   width: 100vw;
 }
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.photoModal {
+  height: 80vh;
+  width: 80vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 50;
+  top: 12vh;
+}
+.modalBackground {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  opacity: 0.85;
+  background-color: white;
+}
+.bigPhoto {
+  width: 90%;
+}
 #realEstate {
   margin-top: 0vh;
 }
 
 /* CONTACT FORM */
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .contactForm {
   display: flex;
   flex-wrap: wrap;
   width: 350px;
+  height: 475px;
   background-color: black;
-  padding: 10vh;
-  margin-bottom:10vh
+  padding: 7vh;
+  margin-bottom: 10vh;
+}
+.contactFormTitle {
+  margin-bottom: 4vh;
 }
 .contactLabel {
   display: flex;
   flex-wrap: wrap;
   background-color: black;
+  font-size: 1.2em;
+  margin-bottom: 1vh;
 }
 .contactBox {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
 }
 .inputLabel {
   background-color: white;
   color: black;
   text-align: left;
-  padding-left: 1vw;
+  padding-left: 0.25vw;
   width: 100%;
+  font-size: 1.2em;
 }
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 4vh 0 0 0;
+}
+.submitButton {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+  justify-content: center;
+}
+.submitButton:hover {
+  background-color: white;
+  color: black;
+}
+/* -- THANK YOU FORM -- */
+.submitTest {
+  height: 450px;
+  background-color: black;
+  color: white;
+  width: 350px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.thankYouTest {
+  color: white;
+  z-index: 20;
+  text-align: center;
+  font-size: 1.4em;
+}
+.thankYouExit {
+  font-weight: 600;
+  width: 90%;
+  position: absolute;
+  top: 2vh;
+  font-size: 1.5em;
+}
+/* END OF THANK YOU FORM */
 /* END OF CONTACT FORM */
 
 /* Enable hover only on non-touch devices */
@@ -155,6 +242,16 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .photoModal {
+    height: 100vh;
+    width: 100vw;
+  }
+  .bigPhoto {
+    width: 100%;
+  }
+  .modalContainer {
+    display: none;
+  }
 }
 
 /* Tablet and Smaller Desktop */
