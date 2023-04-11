@@ -139,6 +139,9 @@
 }
 
 /* CONTACT FORM */
+label {
+  color: white
+}
 .contactContainer {
   display: flex;
   justify-content: center;
@@ -150,6 +153,7 @@
   width: 350px;
   height: 475px;
   background-color: black;
+  color: white !important;
   padding: 7vh;
   margin-bottom: 10vh;
 }
@@ -169,7 +173,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.inputLabel {
+.inputLabel  {
   background-color: white;
   color: black;
   text-align: left;
