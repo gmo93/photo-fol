@@ -55,6 +55,7 @@ export default function ContactUs() {
     e.preventDefault();
 
     let isValidForm = handleValidation();
+    setSubmit(true);
 
     if (isValidForm) {
       setButtonText("Sending");
@@ -69,7 +70,7 @@ export default function ContactUs() {
         },
         method: "POST",
       });
-      setSubmit(true);
+      // setSubmit(true);
 
       const { error } = await res.json();
       if (error) {
