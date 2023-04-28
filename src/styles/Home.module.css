@@ -166,7 +166,7 @@ label {
   background-color: black;
   font-size: 1.2em;
   margin-bottom: 1vh;
-  color: white;
+  color: white !important;
 }
 .contactBox {
   display: flex;
