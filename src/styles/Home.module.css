@@ -1,3 +1,23 @@
+.carousel {
+  height: 100vh;
+  width: 300vw;
+  display: flex; 
+}
+.carouselItem {
+  width: 100vw;
+  position: relative;
+}
+.photoBox {
+  width: 100vw;
+}
+.productCarousel {
+  width: 400vw;
+  margin-left: 100vw;
+  display: inline-flex;
+}
+.photo {
+  height: 70vh;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -42,6 +62,8 @@
 .photoDesc {
   width: 100%;
   text-align: end;
+  color: black;
+  font-weight:400;
 }
 /* NAV BAR */
 .navContainer {
@@ -133,13 +155,10 @@
   justify-content: flex-end;
   padding-top: 15vh;
 }
-.photo {
-  margin: 3vh 10vw;
-}
 .photosSection {
   min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   width: 100vw;
