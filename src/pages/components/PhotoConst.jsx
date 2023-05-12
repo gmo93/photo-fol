@@ -1,5 +1,6 @@
 import React, { Image, useState } from "react";
 import styles from "@/styles/Home.module.css";
+import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 
 export default function PhotoConst() {
   const realEstatePhotos = [
@@ -23,6 +24,7 @@ export default function PhotoConst() {
   const renderNames = (names) => {
     return names.map((name) => (
       <div className={styles.photoBox}>
+        <BiChevronLeft value={{ style: { fill: 'black' } }}/>
         <img
           alt={name}
           key={name}
@@ -30,6 +32,7 @@ export default function PhotoConst() {
           layout="fill"
           src={name}
         />
+        <BiChevronRight value={{ style: { fill: 'black' } }}/>
       </div>
     ));
   };
@@ -37,7 +40,7 @@ export default function PhotoConst() {
   return (
     <div className={styles.photoSection}>
       <div className={styles.carousel}>
-        <div class={styles.carouselItem} id="realestate">
+        <div className={styles.carouselItem} id="realestate">
           <h1 className={styles.headerTest}>REAL ESTATE</h1>
           {renderNames(realEstatePhotos)}
         </div>
