@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from 'next/link';
 import styles from "@/styles/Home.module.css";
 
 export default function NavBar() {
@@ -7,9 +8,9 @@ export default function NavBar() {
 
   return (
     <div className = {styles.navContainer}>
-      <h5 className = {styles.navItem}>Home</h5>
-      <h5 className = {styles.navItem}>About</h5>
-      <h5 className = {styles.navItem}>Contact</h5>
+      <Link href = "#home" ><h5 className = {styles.navItem}>Home</h5></Link>
+      <Link href = "#photos" ><h5 className = {styles.navItem}>Photos</h5></Link>
+      <Link href = "#contact"><h5 className = {styles.navItem}>Contact</h5></Link>
     </div>
   )
 }
