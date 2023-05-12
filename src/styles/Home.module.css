@@ -35,7 +35,7 @@
   background-image: url('/canopy2.jpg');
   width: 100%;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: none; 
   height: 100%;
 
 }
@@ -133,9 +133,9 @@
   justify-content: flex-end;
   padding-top: 15vh;
 }
-.photo {
+/* .photo {
   margin: 3vh 10vw;
-}
+} */
 .photosSection {
   min-height: 100vh;
   display: flex;
