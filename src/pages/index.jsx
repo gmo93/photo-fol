@@ -6,6 +6,7 @@ import PhotoConst from './components/PhotoConst';
 import ContactForm from './components/ContactForm';
 import NavBar from './components/NavBar';
 import PhotoNavBar from './components/PhotoNavBar';
+import Menu from './components/Menu'
 
 export default function Home() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -29,6 +30,7 @@ export default function Home() {
         <link rel="icon" href="/omoLogo.ico" />
       </Head>
       <main className={styles.main}>
+        <Menu />
         <NavBar />
         <div id = "home" className={styles.photoBox}>
           <div className={styles.photoHolder}>
