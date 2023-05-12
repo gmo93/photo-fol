@@ -3,24 +3,13 @@ import styles from "@/styles/Home.module.css";
 
 export default function NavBar() {
   const menuItems = ["home", "photos", "contact"];
-
-  function handleHover(event) {
-    console.log(event.target);
-    console.log("hover");
-  }
+  const [scrollTop, setScrollTop] = useState(0);
 
   return (
-    <div className={styles.navContainer}>
-      {menuItems.map((item) => (
-        <a key={`${item} Link`} href={`#${item}`}>
-          <img
-            key={item}
-            height={15}
-            className={styles.navItem}
-            src={`/menuButtons/${item}HoverIcon.svg`}
-          />
-        </a>
-      ))}
+    <div className = {styles.navContainer}>
+      <h5 className = {styles.navItem}>Home</h5>
+      <h5 className = {styles.navItem}>About</h5>
+      <h5 className = {styles.navItem}>Contact</h5>
     </div>
-  );
+  )
 }
