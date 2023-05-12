@@ -4,7 +4,9 @@
   display: flex; 
 }
 .carouselItem {
-  width: 25vw;
+  width: 80vw;
+  margin: 0 10vw;
+  height: 50vh;
   position: relative;
 }
 .photoBox {
@@ -12,8 +14,11 @@
 }
 .productCarousel {
   width: 400vw;
-  margin-left: 100vw;
+  margin-left: 300vw;
+  min-height: 75vh;
   display: inline-flex;
+  display: flex;
+  align-items: center;
 }
 .photo {
   height: 70vh;
@@ -46,7 +51,7 @@
 .photoHolder {
   display: flex;
   width: 42vw;
-  height: 56vh;
+  height: 25vh;
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;

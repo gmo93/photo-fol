@@ -8,7 +8,7 @@ export default function PhotoConst() {
     const travelPhotos = ['/canopy1.jpeg', '/canopy2.jpeg'];
     const artPhotos = ['/jordanPainting1.jpeg', '/jordanPainting2.jpeg', '/peter.jpeg', '/peterAndChance.jpeg']
     const renderNames = (names) => {
-        return names.map(name => <Image alt = {name} key={name} className={styles.photo} height={500} width={500} src = {name}/>)
+        return names.map(name => <div key={`${name} container`}className={styles.carouselItem}><Image alt = {name} key={name} className={styles.photo} layout="fill" src = {name}/></div>)
     }
     // const [modalOpen, setModalOpen] = useState(false);
     // const [bigImage, setBigImage] = useState();
@@ -22,23 +22,24 @@ export default function PhotoConst() {
     // }
 
   return (
-
     <div className={styles.photoSection}>
-      <div className={styles.carousel}>
-        <div className={styles.carouselItem} id="realestate">
-          <h1 className={styles.headerTest}>REAL ESTATE</h1>
-          {renderNames(realEstatePhotos)}
-        </div>
-      </div>
       <div className={styles.productCarousel} id="product">
         {renderNames(productPhotos)}
       </div>
-      <div id="travel"></div>
-      <h1 className={styles.headerTest}>TRAVEL</h1>
-      {renderNames(travelPhotos)}
-      <div id="art"></div>
-      <h1 className={styles.headerTest}>ART</h1>
-      {renderNames(artPhotos)}
+      <div className={styles.productCarousel} id="travel">
+        {renderNames(travelPhotos)}
+      </div>
+      <div className={styles.productCarousel} id="art">
+        {renderNames(artPhotos)}
+      </div>
+      <div id="travel">
+        <h1 className={styles.headerTest}>TRAVEL</h1>
+        {renderNames(travelPhotos)}
+      </div>
+      <div id="art">
+        <h1 className={styles.headerTest}>ART</h1>
+        {renderNames(artPhotos)}
+      </div>
     </div>
   );
 }

@@ -17,14 +17,11 @@ export default function NavBar() {
       menuItem.style.transform = 'translateX(100vw)';
       menuItem.style.transition = '.5s';
       e.target.style.color = 'white';
-      console.log(menuItem.style);
     } else {
       e.target.style.transform = 'rotate(0deg)';
       e.target.style.transition = '.5s';
       menuItem.style.transform = 'translateX(0vw)';
       menuItem.style.transition = '.5s';
-
-      console.log(menuItem.style);
 
       e.target.style.color = 'black';
     }
