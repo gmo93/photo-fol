@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
-import PhotoConst from './components/PhotoConst';
+import PhotoMenu from './components/PhotoMenu';
 import ContactForm from './components/ContactForm';
 import NavBar from './components/NavBar';
 import PhotoNavBar from './components/PhotoNavBar';
@@ -42,10 +42,8 @@ export default function Home() {
             <h5 className={styles.photoDesc}>07/25/2019</h5>
           </div>
         </div>
-        {scrollTop > 600 && scrollTop < 5100 && <PhotoNavBar />}
-        <div id="photos" className={styles.container}>
-          <PhotoConst />
-        </div>
+        {/* {scrollTop > 600 && scrollTop < 5100 && <PhotoNavBar />} */}
+        <PhotoMenu />
         <div id="contact" className={styles.container}>
           <h1 id="contactHeader" className={styles.headerTest}>
             CONTACT
