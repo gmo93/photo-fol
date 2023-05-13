@@ -14,11 +14,13 @@ export default function PhotoMenu() {
     // e.target.parentElement.nextSibling.style.display = "flex";
 
     if (clicked % 2 === 1) {
-      menuItem.style.height = '100vh';
+      menuItem.style.height = '100%';
+      menuItem.style.minHeight = '100vh';
       menuItem.style.transition = 'height .5s';
     } else if (clicked % 2 === 0) {
       menuItem.style.height = '15vh';
       menuItem.style.transition = 'height .5s';
+      menuItem.style.minHeight = "0";
     } else {
       return;
     }
@@ -28,9 +30,40 @@ export default function PhotoMenu() {
 
   return (
     <div className={styles.photoMenuHolder}>
-      <div className={styles.photoMenu}>
+      <div clicked="false" className={styles.photoMenu}>
         <h2 className={styles.photoMenuItem}>
           Real Estate <BiChevronDown onClick={clicker} />
+        </h2>
+        <div className={styles.photoPullDown}>
+          <Image
+            alt="brown chair picture"
+            src="/livingRoomBig.jpeg"
+            height={300}
+            width={400}
+          />
+          <Image
+            alt="brown chair picture back"
+            src="/kitchenFromDoor.jpeg"
+            height={300}
+            width={400}
+          />
+          <Image
+            alt="brown chair picture"
+            src="/fridgeShot.jpeg"
+            height={300}
+            width={400}
+          />
+          <Image
+            alt="brown chair picture"
+            src="/kitchenDoor.jpeg"
+            height={300}
+            width={400}
+          />
+        </div>
+      </div>
+      <div clicked="false" className={styles.photoMenu}>
+        <h2 className={styles.photoMenuItem}>
+          Product <BiChevronDown onClick={clicker} />
         </h2>
         <div className={styles.photoPullDown}>
           <Image
@@ -47,7 +80,7 @@ export default function PhotoMenu() {
           />
           <Image
             alt="brown chair picture"
-            src="/threeChairStraight.jpeg"
+            src="/threeChairsStraight.jpeg"
             height={300}
             width={300}
           />
@@ -59,17 +92,12 @@ export default function PhotoMenu() {
           />
         </div>
       </div>
-      <div className={styles.photoMenu}>
-        <h2 className={styles.photoMenuItem}>
-          Product <BiChevronDown onClick={clicker} />
-        </h2>
-      </div>
-      <div className={styles.photoMenu}>
+      <div clicked="false" className={styles.photoMenu}>
         <h2 className={styles.photoMenuItem}>
           Travel <BiChevronDown onClick={clicker} />
         </h2>
       </div>
-      <div className={styles.photoMenu}>
+      <div clicked="false" className={styles.photoMenu}>
         <h2 className={styles.photoMenuItem}>
           Art <BiChevronDown onClick={clicker} />
         </h2>
