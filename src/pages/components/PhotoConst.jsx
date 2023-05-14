@@ -23,7 +23,7 @@ export default function PhotoConst() {
     '/canopy1.jpeg',
     '/canopy2.jpeg',
     '/canopy4.jpg',
-    '/canopy7.jpg',
+    '/canopy7.jpeg',
   ];
   const artPhotos = [
     '/jordanPainting1.jpeg',
@@ -35,6 +35,12 @@ export default function PhotoConst() {
   const [artCount, setArtCount] = useState(0);
   const [travelCount, setTravelCount] = useState(0);
   const [productCount, setProductCount] = useState(0);
+  const mouseHover = (e) => {
+    e.target.style.boxShadow = "lightgray -5px 5px 5px"
+  }
+  const mouseLeave = (e) => {
+    e.target.style.boxShadow = "none";
+  }
   const pageAdd = (e) => {
     let parentID =
       e.target.parentElement.parentElement.attributes[2].textContent;
@@ -63,7 +69,7 @@ export default function PhotoConst() {
   };
   const renderNames = (names) => {
     return names.map((name) => (
-      <div className={styles.carouselContainer} key="carouselContainer">
+      <div className={styles.carouselContainer} key={`${name}Container"`}>
         <div key={`${name} container`} className={styles.carouselItem}>
           <Image
             alt={name}
@@ -95,6 +101,8 @@ export default function PhotoConst() {
           fontSize="8em"
           color="white"
           onClick={pageSubtract}
+          onMouseOver={mouseHover}
+          onMouseLeave={mouseLeave}
         />
         <BiChevronRight
           style={{
@@ -105,6 +113,8 @@ export default function PhotoConst() {
           fontSize="8em"
           color="white"
           onClick={pageAdd}
+          onMouseOver={mouseHover}
+          onMouseLeave={mouseLeave}
         />
       </div>
     ));
@@ -113,21 +123,30 @@ export default function PhotoConst() {
   return (
     <div className={styles.photoSection}>
       <div
-        style={{ left: `${countArr[productCount]}vw` }}
+        style={{
+          left: `${countArr[productCount]}vw`,
+          width: `${productPhotos.length * 100}vw`,
+        }}
         className={styles.productCarousel}
         id="product"
       >
         {renderNames(productPhotos)}
       </div>
       <div
-        style={{ left: `${countArr[travelCount]}vw` }}
+        style={{
+          left: `${countArr[travelCount]}vw`,
+          width: `${travelPhotos.length * 100}vw`,
+        }}
         className={styles.productCarousel}
         id="travel"
       >
         {renderNames(travelPhotos)}
       </div>
       <div
-        style={{ left: `${countArr[artCount]}vw` }}
+        style={{
+          left: `${countArr[artCount]}vw`,
+          width: `${artPhotos.length * 100}vw`,
+        }}
         className={styles.productCarousel}
         id="art"
       >
