@@ -300,7 +300,7 @@
   flex-wrap: wrap;
   width: 350px;
   height: 475px;
-  background-color: black;
+  background-color: gray;
   color: white !important;
   padding: 7vh;
   margin-bottom: 10vh;
@@ -311,7 +311,7 @@
 .contactLabel {
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: gray;
   font-size: 1.2em;
   margin-bottom: 1vh;
   color: white !important;
@@ -338,7 +338,7 @@
 }
 .submitButton {
   color: white;
-  background-color: black;
+  background-color: gray;
   border: 2px solid white;
   border-radius: 5px;
   padding: 5px 15px;
@@ -353,7 +353,7 @@
 }
 /* -- THANK YOU FORM -- */
 .submitTest {
-  height: 450px;
+  height: 475px;
   background-color: black;
   color: white;
   width: 350px;
