@@ -17,7 +17,7 @@ export default function NavBar() {
       console.log(e)
       e.target.style.transform = 'rotate(90deg)';
       e.target.style.transition = '.5s';
-      menuItem.style.msTransofrm = 'translateX(100vw)';
+      menuItem.style.msTransform = 'translateX(100vw)';
       menuItem.style.WebkitTransform = 'translateX(100vw)';
       menuItem.style.MozTransform = 'translateX(100vw)';
       menuItem.style.OTransform = 'translateX(100vw)';
