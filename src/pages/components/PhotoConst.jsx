@@ -36,10 +36,10 @@ export default function PhotoConst() {
   const [travelCount, setTravelCount] = useState(0);
   const [productCount, setProductCount] = useState(0);
   const mouseHover = (e) => {
-    e.target.style.boxShadow = "lightgray -5px 5px 5px"
+    e.target.style.backgroundColor = "gray"
   }
   const mouseLeave = (e) => {
-    e.target.style.boxShadow = "none";
+    e.target.style.backgroundColor = "lightgray";
   }
   const pageAdd = (e) => {
     let parentID =
@@ -94,11 +94,11 @@ export default function PhotoConst() {
         </h5>
         <BiChevronLeft
           style={{
-            backgroundColor: 'black',
+            backgroundColor: 'lightgray',
             margin: '3vh 10vw',
             width: '20vw',
           }}
-          fontSize="8em"
+          fontSize="4em"
           color="white"
           onClick={pageSubtract}
           onMouseOver={mouseHover}
@@ -106,11 +106,11 @@ export default function PhotoConst() {
         />
         <BiChevronRight
           style={{
-            backgroundColor: 'black',
+            backgroundColor: 'lightgray',
             margin: '3vh 10vw',
             width: '20vw',
           }}
-          fontSize="8em"
+          fontSize="4em"
           color="white"
           onClick={pageAdd}
           onMouseOver={mouseHover}
