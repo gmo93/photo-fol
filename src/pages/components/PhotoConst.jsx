@@ -11,6 +11,7 @@ export default function PhotoConst() {
     '/kitchenDoor.jpeg',
     '/kitchenFromDoor.jpeg',
     '/livingRoom.jpeg',
+    '/livingRoom.jpeg',
   ];
   const productPhotos = [
     '/brownChairBack.jpeg',
@@ -18,7 +19,12 @@ export default function PhotoConst() {
     '/threeChairsStraight.jpeg',
     '/threeChairsSideways.jpeg',
   ];
-  const travelPhotos = ['/canopy1.jpeg', '/canopy2.jpeg'];
+  const travelPhotos = [
+    '/canopy1.jpeg',
+    '/canopy2.jpeg',
+    '/canopy4.jpg',
+    '/canopy7.jpg',
+  ];
   const artPhotos = [
     '/jordanPainting1.jpeg',
     '/jordanPainting2.jpeg',
@@ -26,21 +32,33 @@ export default function PhotoConst() {
     '/peterAndChance.jpeg',
   ];
   const countArr = [-150, -50, 50, 150];
-  const [count, setCount] = useState(0);
+  const [artCount, setArtCount] = useState(0);
+  const [travelCount, setTravelCount] = useState(0);
+  const [productCount, setProductCount] = useState(0);
   const pageAdd = (e) => {
-    let imageLeft = e.target.parentElement.parentElement.style.left;
-    console.log(countArr.length)
-    console.log(count)
-    if (count < countArr.length - 1) {
-      // imageLeft = imageLeft + ''
-      setCount(count + 1);
+    let parentID =
+      e.target.parentElement.parentElement.attributes[2].textContent;
+    if (parentID === 'art' && artCount < countArr.length) {
+      setArtCount(artCount + 1);
+    }
+    if (parentID === 'product' && productCount < countArr.length) {
+      setProductCount(productCount + 1);
+    }
+    if (parentID === 'travel' && travelCount < countArr.length) {
+      setTravelCount(travelCount + 1);
     }
   };
   const pageSubtract = (e) => {
-    let imageLeft = e.target.parentElement.parentElement.style.left;
-    // imageLeft = imageLeft + ''
-    if (count > 0) {
-      setCount(count - 1);
+    let parentID =
+      e.target.parentElement.parentElement.attributes[2].textContent;
+    if (parentID === 'art' && artCount > 0) {
+      setArtCount(artCount - 1);
+    }
+    if (parentID === 'product' && productCount > 0) {
+      setProductCount(productCount - 1);
+    }
+    if (parentID === 'travel' && travelCount > 0) {
+      setTravelCount(travelCount - 1);
     }
   };
   const renderNames = (names) => {
@@ -56,13 +74,23 @@ export default function PhotoConst() {
             src={name}
           />
         </div>
-        <h5 className={styles.photoCaption}>Photographed By Grant Omohundro</h5>
-        <h5 className={styles.photoCaption}>Date: 02/17/22</h5>
+        <h5
+          style={{ color: 'black', width: '80%' }}
+          className={styles.photoCaption}
+        >
+          Photographed By Grant Omohundro
+        </h5>
+        <h5
+          style={{ color: 'black', width: '80%' }}
+          className={styles.photoCaption}
+        >
+          Date: 02/17/22
+        </h5>
         <BiChevronLeft
           style={{
             backgroundColor: 'black',
-            margin: '3vh 2vw',
-            opacity: '.75',
+            margin: '3vh 10vw',
+            width: '20vw',
           }}
           fontSize="8em"
           color="white"
@@ -71,8 +99,8 @@ export default function PhotoConst() {
         <BiChevronRight
           style={{
             backgroundColor: 'black',
-            margin: '3vh 2vw',
-            opacity: '.75',
+            margin: '3vh 10vw',
+            width: '20vw',
           }}
           fontSize="8em"
           color="white"
@@ -85,18 +113,24 @@ export default function PhotoConst() {
   return (
     <div className={styles.photoSection}>
       <div
-        style={{ left: `${countArr[count]}vw` }}
+        style={{ left: `${countArr[productCount]}vw` }}
         className={styles.productCarousel}
         id="product"
       >
         {renderNames(productPhotos)}
       </div>
-      {/* <BiChevronLeft fontSize="10em" color="black" />
-      <BiChevronRight fontSize="6em" color="black" /> */}
-      {/* <div className={styles.productCarousel} id="travel">
+      <div
+        style={{ left: `${countArr[travelCount]}vw` }}
+        className={styles.productCarousel}
+        id="travel"
+      >
         {renderNames(travelPhotos)}
-      </div> */}
-      <div className={styles.productCarousel} id="art">
+      </div>
+      <div
+        style={{ left: `${countArr[artCount]}vw` }}
+        className={styles.productCarousel}
+        id="art"
+      >
         {renderNames(artPhotos)}
       </div>
     </div>
