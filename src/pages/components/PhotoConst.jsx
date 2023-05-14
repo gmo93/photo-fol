@@ -25,40 +25,74 @@ export default function PhotoConst() {
     '/peter.jpeg',
     '/peterAndChance.jpeg',
   ];
+  const countArr = [-150, -50, 50, 150];
+  const [count, setCount] = useState(0);
+  const pageAdd = (e) => {
+    let imageLeft = e.target.parentElement.parentElement.style.left;
+    console.log(countArr.length)
+    console.log(count)
+    if (count < countArr.length - 1) {
+      // imageLeft = imageLeft + ''
+      setCount(count + 1);
+    }
+  };
+  const pageSubtract = (e) => {
+    let imageLeft = e.target.parentElement.parentElement.style.left;
+    // imageLeft = imageLeft + ''
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
   const renderNames = (names) => {
     return names.map((name) => (
-      <div key={`${name} container`} className={styles.carouselItem}>
-        <BiChevronLeft fontSize="6em" color="white"/>
-        <Image
-          alt={name}
-          key={name}
-          className={styles.photo}
-          height={533}
-          width={800}
-          src={name}
+      <div className={styles.carouselContainer} key="carouselContainer">
+        <div key={`${name} container`} className={styles.carouselItem}>
+          <Image
+            alt={name}
+            key={name}
+            className={styles.photo}
+            fill
+            style={{ objectFit: 'contain' }}
+            src={name}
+          />
+        </div>
+        <h5 className={styles.photoCaption}>Photographed By Grant Omohundro</h5>
+        <h5 className={styles.photoCaption}>Date: 02/17/22</h5>
+        <BiChevronLeft
+          style={{
+            backgroundColor: 'black',
+            margin: '3vh 2vw',
+            opacity: '.75',
+          }}
+          fontSize="8em"
+          color="white"
+          onClick={pageSubtract}
         />
-        <BiChevronRight fontSize="6em" color="white"/>
+        <BiChevronRight
+          style={{
+            backgroundColor: 'black',
+            margin: '3vh 2vw',
+            opacity: '.75',
+          }}
+          fontSize="8em"
+          color="white"
+          onClick={pageAdd}
+        />
       </div>
     ));
   };
-  // const [modalOpen, setModalOpen] = useState(false);
-  // const [bigImage, setBigImage] = useState();
-  // const handleClick = (e) => {
-  //     let imageAlt = (e.target.alt).replaceAll('.jpeg', 'Big.jpeg');
-  //     setBigImage(imageAlt);
-  //     setModalOpen(true);
-  // };
-  // const handleClose = (e) => {
-  //     setModalOpen(false);
-  // }
 
   return (
     <div className={styles.photoSection}>
-      <div className={styles.productCarousel} id="product">
+      <div
+        style={{ left: `${countArr[count]}vw` }}
+        className={styles.productCarousel}
+        id="product"
+      >
         {renderNames(productPhotos)}
       </div>
-      <BiChevronLeft fontSize="6em" color="black" />
-      <BiChevronRight fontSize="6em" color="black" />
+      {/* <BiChevronLeft fontSize="10em" color="black" />
+      <BiChevronRight fontSize="6em" color="black" /> */}
       {/* <div className={styles.productCarousel} id="travel">
         {renderNames(travelPhotos)}
       </div> */}

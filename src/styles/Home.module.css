@@ -5,20 +5,27 @@
 }
 .carouselItem {
   width: 100vw;
-  margin: 0 10vw;
-  height: 100vh;
+  height: 50vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.carouselContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 }
 .photoBox {
   width: 100vw;
 }
 .productCarousel {
   width: 400vw;
-  margin-left: 300vw;
-  min-height: 75vh;
+  min-height: 50vh;
+  margin-bottom: 25vh;
+  position: relative;
   display: inline-flex;
   display: flex;
   align-items: center;
@@ -26,6 +33,10 @@
 .photo {
   height: 40%;
   width: 60%;
+}
+.photoCaption {
+  width: 70%;text-align: right;
+  font-weight: 400;
 }
 .photoMenuHolder {
   /* min-height: 100vh; */
@@ -95,7 +106,7 @@
 }
 .photoDesc {
   width: 100%;
-  text-align: end;
+  text-align: center;
   color: black;
   font-weight:400;
 }
