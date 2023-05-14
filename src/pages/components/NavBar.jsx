@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
 
+
+
 export default function NavBar() {
   const menuItems = ['home', 'photos', 'contact'];
   const [scrollTop, setScrollTop] = useState(0);
@@ -12,8 +14,13 @@ export default function NavBar() {
     let menuItem = e.target.parentElement.parentElement.children[0];
     setMenuCount(menuCount + 1);
     if (menuCount % 2 === 1) {
+      console.log(e)
       e.target.style.transform = 'rotate(90deg)';
       e.target.style.transition = '.5s';
+      menuItem.style.msTransofrm = 'translateX(100vw)';
+      menuItem.style.WebkitTransform = 'translateX(100vw)';
+      menuItem.style.MozTransform = 'translateX(100vw)';
+      menuItem.style.OTransform = 'translateX(100vw)';
       menuItem.style.transform = 'translateX(100vw)';
       menuItem.style.transition = '.5s';
       e.target.style.color = 'white';
@@ -38,15 +45,6 @@ export default function NavBar() {
         src="/hamburgerMenuClosed.svg"
         style={{ stroke: 'red !important' }}
       ></Image>
-      {/* <Link href="#home">
-        <h5 className={styles.navItem}>Home</h5>
-      </Link>
-      <Link href="#photos">
-        <h5 className={styles.navItem}>Photos</h5>
-      </Link>
-      <Link href="#contact">
-        <h5 className={styles.navItem}>Contact</h5>
-      </Link> */}
     </div>
   );
 }
