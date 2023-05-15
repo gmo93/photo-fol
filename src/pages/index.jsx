@@ -36,7 +36,7 @@ export default function Home() {
           <div className={styles.photoHolder}>
             <div className={styles.logo}>
               <Image
-                id = {styles.logo1}
+                id={styles.logo1}
                 src="/omoPhotosLogoSansSerif.svg"
                 fill
                 alt="home page logo number 1"
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             <div className={styles.logo}>
               <Image
-              id = {styles.logo2}
+                id={styles.logo2}
                 src="/omoPhotosLogoSansSerif.svg"
                 fill
                 alt="home page logo number 1"
@@ -52,11 +52,20 @@ export default function Home() {
             </div>
             <div className={styles.logo}>
               <Image
-              id = {styles.logo3}
+                id={styles.logo3}
                 src="/omoPhotosLogoSansSerif.svg"
                 fill
                 alt="home page logo number 1"
               />
+            </div>
+            <div className={styles.logo}>
+              <h2>
+                My name is Grant and I'm a product, real estate, and fashion
+                photographer.
+              </h2>
+              <h2>
+                If you click the hamburger menu in the top right, you will be able to checkout some of my different photos! If you have would like to reach out to me about anything, you can do that through the contact for on there as well.
+              </h2>
             </div>
           </div>
         </div>
