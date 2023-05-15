@@ -20,7 +20,7 @@ export default function PhotoMenu() {
     } else if (clicked % 2 === 0) {
       menuItem.style.height = '15vh';
       menuItem.style.transition = 'height .5s';
-      menuItem.style.minHeight = "0";
+      menuItem.style.minHeight = '0';
     } else {
       return;
     }
@@ -37,25 +37,25 @@ export default function PhotoMenu() {
         <div className={styles.photoPullDown}>
           <Image
             alt="brown chair picture"
-            src="/livingRoomBig.jpeg"
+            src="/livingRoomBig.jpg"
             height={300}
             width={400}
           />
           <Image
             alt="brown chair picture back"
-            src="/kitchenFromDoor.jpeg"
+            src="/kitchenFromDoor.jpg"
             height={300}
             width={400}
           />
           <Image
             alt="brown chair picture"
-            src="/fridgeShot.jpeg"
+            src="/fridgeShot.jpg"
             height={300}
             width={400}
           />
           <Image
             alt="brown chair picture"
-            src="/kitchenDoor.jpeg"
+            src="/kitchenDoor.jpg"
             height={300}
             width={400}
           />
@@ -68,25 +68,25 @@ export default function PhotoMenu() {
         <div className={styles.photoPullDown}>
           <Image
             alt="brown chair picture"
-            src="/brownChairFront.jpeg"
+            src="/brownChairFront.jpg"
             height={300}
             width={300}
           />
           <Image
             alt="brown chair picture back"
-            src="/brownChairBack.jpeg"
+            src="/brownChairBack.jpg"
             height={300}
             width={300}
           />
           <Image
             alt="brown chair picture"
-            src="/threeChairsStraight.jpeg"
+            src="/threeChairsStraight.jpg"
             height={300}
             width={300}
           />
           <Image
             alt="brown chair picture"
-            src="/threeChairsSideways.jpeg"
+            src="/threeChairsSideways.jpg"
             height={300}
             width={300}
           />

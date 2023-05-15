@@ -60,14 +60,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="contact" className={styles.container}>
-          <h1 id="contactHeader" className={styles.headerTest}>
-            CONTACT
-          </h1>
-          <div className={styles.contactBox}>
-            <ContactForm />
-          </div>
-        </div>
       </main>
     </>
   );

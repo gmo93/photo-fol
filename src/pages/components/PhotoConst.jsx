@@ -8,39 +8,39 @@ const style = { size: '3em' };
 
 export default function PhotoConst() {
   const realEstatePhotos = [
-    '/kitchenDoor.jpeg',
-    '/kitchenFromDoor.jpeg',
-    '/livingRoom.jpeg',
-    '/livingRoom.jpeg',
+    '/kitchenDoor.jpg',
+    '/kitchenFromDoor.jpg',
+    '/livingRoom.jpg',
+    '/livingRoom.jpg',
   ];
   const productPhotos = [
-    '/brownChairBack.jpeg',
-    '/brownChairFront.jpeg',
-    '/threeChairsStraight.jpeg',
-    '/threeChairsSideways.jpeg',
+    '/brownChairBack.jpg',
+    '/brownChairFront.jpg',
+    '/threeChairsStraight.jpg',
+    '/threeChairsSideways.jpg',
   ];
   const travelPhotos = [
-    '/canopy1.jpeg',
-    '/canopy2.jpeg',
+    '/canopy1.jpg',
+    '/canopy2.jpg',
     '/canopy4.jpg',
-    '/canopy7.jpeg',
+    '/canopy7.jpg',
   ];
   const artPhotos = [
-    '/jordanPainting1.jpeg',
-    '/jordanPainting2.jpeg',
-    '/peter.jpeg',
-    '/peterAndChance.jpeg',
+    '/jordanPainting1.jpg',
+    '/jordanPainting2.jpg',
+    '/peter.jpg',
+    '/peterAndChance.jpg',
   ];
   const countArr = [-150, -50, 50, 150];
   const [artCount, setArtCount] = useState(0);
   const [travelCount, setTravelCount] = useState(0);
   const [productCount, setProductCount] = useState(0);
   const mouseHover = (e) => {
-    e.target.style.backgroundColor = "gray"
-  }
+    e.target.style.backgroundColor = 'gray';
+  };
   const mouseLeave = (e) => {
-    e.target.style.backgroundColor = "lightgray";
-  }
+    e.target.style.backgroundColor = 'lightgray';
+  };
   const pageAdd = (e) => {
     let parentID =
       e.currentTarget.parentElement.parentElement.attributes[2].textContent;
