@@ -177,6 +177,8 @@
   rotate: 0deg;
   transition: smooth;
   position: fixed;
+  margin-right: 2vh;
+  margin-top: 2vh;
 }
 @keyframes openTurn {
   0% {
