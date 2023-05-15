@@ -43,7 +43,7 @@ export default function PhotoConst() {
   }
   const pageAdd = (e) => {
     let parentID =
-      e.target.parentElement.parentElement.attributes[2].textContent;
+      e.currentTarget.parentElement.parentElement.attributes[2].textContent;
     if (parentID === 'art' && artCount < countArr.length) {
       setArtCount(artCount + 1);
     }
@@ -94,7 +94,7 @@ export default function PhotoConst() {
         </h5>
         <BiChevronLeft
           style={{
-            backgroundColor: 'lightgray',
+            backgroundColor: 'black',
             margin: '3vh 10vw',
             width: '20vw',
           }}
@@ -106,7 +106,7 @@ export default function PhotoConst() {
         />
         <BiChevronRight
           style={{
-            backgroundColor: 'lightgray',
+            backgroundColor: 'black',
             margin: '3vh 10vw',
             width: '20vw',
           }}

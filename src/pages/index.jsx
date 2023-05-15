@@ -32,14 +32,29 @@ export default function Home() {
       <main className={styles.main}>
         <Menu />
         <NavBar />
-        <div id = "home" className={styles.photoBox}>
+        <div id="home" className={styles.photoBox}>
           <div className={styles.photoHolder}>
-            <div className={styles.mainPhoto}></div>
-            <h5 className={styles.photoDesc}>Omohundro Photos</h5>
-            <h5 className={styles.photoDesc}>
-              Photographed by Grant Omohundro
-            </h5>
-            <h5 className={styles.photoDesc}>07/25/2019</h5>
+            <div className={styles.logo}>
+              <Image
+                src="/omoPhotosLogoSansSerif.svg"
+                fill
+                alt="home page logo number 1"
+              />
+            </div>
+            <div className={styles.logo}>
+              <Image
+                src="/omoPhotosLogoSansSerif.svg"
+                fill
+                alt="home page logo number 1"
+              />
+            </div>
+            <div className={styles.logo}>
+              <Image
+                src="/omoPhotosLogoSansSerif.svg"
+                fill
+                alt="home page logo number 1"
+              />
+            </div>
           </div>
         </div>
         {/* {scrollTop > 600 && scrollTop < 5100 && <PhotoNavBar />} */}

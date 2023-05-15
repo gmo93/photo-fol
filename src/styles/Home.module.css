@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 42vh;
 }
 .photoBox {
   width: 100vw;
@@ -88,19 +88,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 7vh;
 }
 .photoHolder {
   display: flex;
-  width: 45vw;
-  height: 50vh;
+  width: 84vw;
+  height: 100%;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
 }
 .mainPhoto {
-  background-image: url('/canopy2.jpg');
+  background-image: url('/omoPhotosLogoSansSerif.svg');
   width: 100%;
-  height: 100%;
+  height: 52%;
   background-size: contain;
   background-repeat: no-repeat !important; 
 }
@@ -376,8 +377,12 @@
   top: 2vh;
   font-size: 1.5em;
 }
-/* END OF THANK YOU FORM */
-/* END OF CONTACT FORM */
+
+.logo {
+  height: 30vh;
+  width: 100vw;
+  position: relative;
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -407,7 +412,10 @@
   }
   .photoHolder {
   width: 84vw;
-  height: 32vh;
+  height: 100vh;
+}
+.mainPhoto {
+  width: 30%;
 }
 }
 
