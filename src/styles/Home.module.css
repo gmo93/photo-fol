@@ -312,7 +312,7 @@
 .contactLabel {
   display: flex;
   flex-wrap: wrap;
-  background-color: gray;
+  background-color: black;
   font-size: 1.2em;
   margin-bottom: 1vh;
   color: white !important;
@@ -339,7 +339,7 @@
 }
 .submitButton {
   color: white;
-  background-color: gray;
+  background-color: black;
   border: 2px solid white;
   border-radius: 5px;
   padding: 5px 15px;
