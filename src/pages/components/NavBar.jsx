@@ -13,7 +13,7 @@ export default function NavBar() {
   const clickTurn = (e) => {
     let menuItem = e.target.parentElement.parentElement.children[0];
     setMenuCount(menuCount + 1);
-    if (menuCount % 2 === 1) {
+    if (menuCount % 2 === 0) {
       console.log(e)
       e.target.style.transform = 'rotate(90deg)';
       e.target.style.transition = '.5s';
