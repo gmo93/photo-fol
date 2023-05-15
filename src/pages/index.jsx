@@ -60,7 +60,7 @@ export default function Home() {
             </div>
             <div className={styles.logo}>
               <h2>
-                My name is Grant and I'm a product, real estate, and fashion
+                My name is Grant and Im a product, real estate, and fashion
                 photographer.
               </h2>
               <h2>
