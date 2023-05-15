@@ -36,6 +36,7 @@ export default function Home() {
           <div className={styles.photoHolder}>
             <div className={styles.logo}>
               <Image
+                id = {styles.logo1}
                 src="/omoPhotosLogoSansSerif.svg"
                 fill
                 alt="home page logo number 1"
@@ -43,6 +44,7 @@ export default function Home() {
             </div>
             <div className={styles.logo}>
               <Image
+              id = {styles.logo2}
                 src="/omoPhotosLogoSansSerif.svg"
                 fill
                 alt="home page logo number 1"
@@ -50,6 +52,7 @@ export default function Home() {
             </div>
             <div className={styles.logo}>
               <Image
+              id = {styles.logo3}
                 src="/omoPhotosLogoSansSerif.svg"
                 fill
                 alt="home page logo number 1"
@@ -57,8 +60,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* {scrollTop > 600 && scrollTop < 5100 && <PhotoNavBar />} */}
-        <PhotoConst />
         <div id="contact" className={styles.container}>
           <h1 id="contactHeader" className={styles.headerTest}>
             CONTACT

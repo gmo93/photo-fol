@@ -383,7 +383,42 @@
   width: 100vw;
   position: relative;
 }
-
+#logo1 {
+  animation-name: slideLeft;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+  margin-left: -20vw;
+  animation-delay: .25s;
+  opacity: 0;
+}
+#logo3 {
+  animation-name: slideRight;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+  margin-left: 20vw;
+  opacity: 0;
+  animation-delay: .75s;
+}
+@keyframes slideLeft {
+  0% {
+    margin-left: -20vw;
+    opacity: 0
+  }
+  100% {
+    margin-left: 0vw;
+    opacity: 1
+  }
+}
+@keyframes slideRight {
+  0% {
+    margin-left: 20vw;
+    opacity: 0
+  }
+  100% {
+    margin-left: 0vw;
+    opacity: 1
+  }
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
 }
