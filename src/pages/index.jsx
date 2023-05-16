@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
 import PhotoConst from './components/PhotoConst';
 import ContactForm from './components/ContactForm';
@@ -30,7 +31,33 @@ export default function Home() {
         <link rel="icon" href="/omoLogo.ico" />
       </Head>
       <main className={styles.main}>
-        <Menu />
+        <div className={styles.menuContainer}>
+          <div className={styles.menuBox}>
+            <div className={styles.menuItemHolder}>
+              <Link href="/">
+                <h5 className={styles.menuItem}>Home</h5>
+              </Link>
+              <Link href="/about">
+                <h5 className={styles.menuItem}>About</h5>
+              </Link>
+              <Link href="/realestate">
+                <h5 className={styles.menuItem}>Real Estate</h5>
+              </Link>
+              <Link href="/product">
+                <h5 className={styles.menuItem}>Product</h5>
+              </Link>
+              <Link href="/travel">
+                <h5 className={styles.menuItem}>Travel</h5>
+              </Link>
+              <Link href="/art">
+                <h5 className={styles.menuItem}>Art</h5>
+              </Link>
+              <Link href="/contact">
+                <h5 className={styles.menuItem}>Contact</h5>
+              </Link>
+            </div>
+          </div>
+        </div>
         <NavBar />
         <div id="home" className={styles.photoBox}>
           <div className={styles.photoHolder}>
@@ -64,7 +91,10 @@ export default function Home() {
                 photographer.
               </h2>
               <h2>
-                If you click the hamburger menu in the top right, you will be able to checkout some of my different photos! If you have would like to reach out to me about anything, you can do that through the contact for on there as well.
+                If you click the hamburger menu in the top right, you will be
+                able to checkout some of my different photos! If you have would
+                like to reach out to me about anything, you can do that through
+                the contact for on there as well.
               </h2>
             </div>
           </div>
