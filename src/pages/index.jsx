@@ -85,18 +85,18 @@ export default function Home() {
                 alt="home page logo number 1"
               />
             </div>
-            <div className={styles.bio}>
-              <h2>
-                My name is Grant and Im a product, real estate, and fashion
-                photographer.
-              </h2>
-              <h2>
-                If you click the hamburger menu in the top right, you will be
-                able to checkout some of my different photos! If you have would
-                like to reach out to me about anything, you can do that through
-                the contact for on there as well.
-              </h2>
-            </div>
+          </div>
+          <div className={styles.bio}>
+            <h2>
+              My name is Grant and Im a product, real estate, and fashion
+              photographer.
+            </h2>
+            <h2>
+              If you click the hamburger menu in the top right, you will be able
+              to checkout some of my different photos! If you have would like to
+              reach out to me about anything, you can do that through the
+              contact for on there as well.
+            </h2>
           </div>
         </div>
       </main>

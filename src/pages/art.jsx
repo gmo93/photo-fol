@@ -5,7 +5,7 @@ import NavBar from './components/NavBar.jsx';
 import Menu from './components/Menu.jsx';
 import TravelPhotos from './components/TravelPhotos.jsx';
 
-export default function RealEstate() {
+export default function Art() {
   return (
     <div>
       <Menu />
