@@ -489,8 +489,22 @@
 }
 .photoTitle {
   top: 8vh;
-  left: 5vw;
+  left: 0vw;
   position: absolute;
+  animation-name: nameSlide;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes nameSlide {
+  0% {
+    left: 0vw;
+    opacity: 0;
+  }
+  100% {
+    left: 5vw;
+    opacity: 1;
+  }
 }
 .grid {
   display: grid;
@@ -518,9 +532,11 @@
   }
   .column {
     width: 75vw;
+    margin-top: 20vh;
   }
   .columnImage {
     height: 25%;
+    margin-bottom: 2vh;
   }
 }
 
