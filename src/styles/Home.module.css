@@ -533,6 +533,7 @@
   .column {
     width: 75vw;
     margin-top: 20vh;
+    overflow-y: visible;
   }
   .columnImage {
     height: 25%;
