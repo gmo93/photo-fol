@@ -514,6 +514,12 @@
   .mainPhoto {
     width: 30%;
   }
+  .column {
+    width: 75vw;
+  }
+  .columnImage {
+    height: 25%;
+  }
 }
 
 /* Tablet and Smaller Desktop */
