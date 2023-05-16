@@ -472,7 +472,7 @@
 .contactTitle {
   transition: top 2s;
   width: 25%;
-  font-size: 8em;
+  font-size: 6em;
   rotate: -90deg;
   animation-name: fontSmall;
   animation-duration: 0.5s;
@@ -506,7 +506,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 10vh;
   margin-bottom: -15vh;
 }
 .contactTitleBox {
@@ -515,8 +515,8 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
-  margin-bottom: -45vh;
+  margin-top: 18vh;
+  margin-bottom: -25vh;
 }
 .titleBox {
   height: 100vh;
