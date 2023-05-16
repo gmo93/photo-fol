@@ -82,7 +82,7 @@
 }
 .photoBox {
   height: 93vh;
-  width: 30vw;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -418,7 +418,7 @@
 }
 .bio {
   height: 60vh;
-  width: 100vw;
+  width: 70vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -507,6 +507,14 @@
   justify-content: center;
   align-items: center;
   margin-top: 10vh;
+  margin-bottom: -15vh;
+}
+.travelTitleBox {
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   margin-bottom: -15vh;
 }
 .contactTitleBox {

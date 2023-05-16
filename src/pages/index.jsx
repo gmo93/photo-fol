@@ -7,7 +7,7 @@ import PhotoConst from './components/PhotoConst';
 import ContactForm from './components/ContactForm';
 import NavBar from './components/NavBar';
 import PhotoNavBar from './components/PhotoNavBar';
-import Menu from './components/Menu'
+import Menu from './components/Menu';
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
@@ -100,18 +100,15 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className={styles.bio}>
-            <h2>
-              My name is Grant and Im a product, real estate, and fashion
-              photographer.
-            </h2>
-            <h2>
-              If you click the hamburger menu in the top right, you will be able
-              to checkout some of my different photos! If you have would like to
-              reach out to me about anything, you can do that through the
-              contact for on there as well.
-            </h2>
-          </div>
+        </div>
+        <div className={styles.bio}>
+          <h2>
+            My name is Grant and Im a product, real estate, and fashion
+            photographer. If you click the hamburger menu in the top right, you will be able
+            to checkout some of my different photos! If you have would like to
+            reach out to me about anything, you can do that through the contact
+            for on there as well.
+          </h2>
         </div>
       </main>
     </>
