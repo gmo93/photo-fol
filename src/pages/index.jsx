@@ -32,11 +32,19 @@ export default function Home() {
           description="Grant Omohundro is a photographer who specializes in Product, Real Estate, and Travel photography."
           canonical="https://www.omohundro.photos.com"
           openGraph={{
-            url: '/omoPhotosOGImage.jpg',
+            url: 'www.omohundro.photos',
             title: 'Omohundro Photos OG Image',
             description: 'OMO Photos Logo used as OG Image',
-            siteName: "Omohundro Photos"
-
+            siteName: "Omohundro Photos",
+            images: [
+              {
+                url: 'www.omohundro.photos/opOGMobileImage.jpg',
+                width: 300,
+                height: 300,
+                alt: 'OG Image Alt',
+                type: 'image/jpeg'
+              }
+            ]
           }}
         />
       </Head>
