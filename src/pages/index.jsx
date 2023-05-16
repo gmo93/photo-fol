@@ -8,6 +8,7 @@ import ContactForm from './components/ContactForm';
 import NavBar from './components/NavBar';
 import PhotoNavBar from './components/PhotoNavBar';
 import Menu from './components/Menu'
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -26,6 +27,18 @@ export default function Home() {
     <>
       <Head>
         <title>Omohundro Photos</title>
+        <NextSeo 
+          title="Omohundro Photos: Chicago Based Photographer"
+          description="Grant Omohundro is a photographer who specializes in Product, Real Estate, and Travel photography."
+          canonical="https://www.omohundro.photos.com"
+          openGraph={{
+            url: '/omoPhotosOGImage.jpg',
+            title: 'Omohundro Photos OG Image',
+            description: 'OMO Photos Logo used as OG Image',
+            siteName: "Omohundro Photos"
+
+          }}
+        />
         <meta name="description" content="Omohundro Photos Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/omoLogo.ico" />
