@@ -27,26 +27,22 @@ export default function Home() {
     <>
       <Head>
         <title>Omohundro Photos</title>
-        <NextSeo 
-          title="Omohundro Photos: Chicago Based Photographer"
-          description="Grant Omohundro is a photographer who specializes in Product, Real Estate, and Travel photography."
-          canonical="https://www.omohundro.photos.com"
-          openGraph={{
-            url: 'www.omohundro.photos',
-            title: 'Omohundro Photos OG Image',
-            description: 'OMO Photos Logo used as OG Image',
-            siteName: "Omohundro Photos",
-            images: [
-              {
-                url: 'www.omohundro.photos/opOGMobileImage.jpg',
-                width: 300,
-                height: 300,
-                alt: 'OG Image Alt',
-                type: 'image/jpeg'
-              }
-            ]
-          }}
+        <meta charSet="UTF-8" />
+        <meta name="keywords" content="titla, meta, nextjs" />
+        <meta name="author" content="Syamlal CM" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+        <meta property="og:title" content="Omohundro Photos" />
+        <meta property="og:image" content="/opOGMObileImage.jpg" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta
+          property="og:description"
+          content="Omohundro Photos is a Chicago based photographer specializing in Product, Real Estate, and Travel photography."
         />
+        <meta property="og:url" content="www.omohundro.photos" />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/omoPhotoIcon.svg" />
       </Head>
       <main className={styles.main}>
         <div className={styles.menuContainer}>
