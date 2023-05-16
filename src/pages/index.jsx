@@ -39,9 +39,6 @@ export default function Home() {
 
           }}
         />
-        <meta name="description" content="Omohundro Photos Portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/omoLogo.ico" />
       </Head>
       <main className={styles.main}>
         <div className={styles.menuContainer}>
