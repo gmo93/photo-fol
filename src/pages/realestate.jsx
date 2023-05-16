@@ -12,11 +12,13 @@ export default function RealEstate() {
       <NavBar />
       <div className={styles.photoPage}>
         <div className={styles.portfolioContainer}>
-          <h1 id = {styles.realEstateTitle} className={styles.photoTitle}>Real Estate</h1>
+          <h1 id={styles.realEstateTitle} className={styles.photoTitle}>
+            Real Estate
+          </h1>
           <div className={styles.column}>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy1.jpg"
+                src="/livingRoom.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -24,7 +26,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy2.jpg"
+                src="/kitchenFromDoor.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -32,7 +34,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy4.jpg"
+                src="/kitchenDoor.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -40,7 +42,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy7.jpg"
+                src="/fridgeShot.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -48,7 +50,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy4.jpg"
+                src="/meatRoom2Optimal.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -56,7 +58,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy7.jpg"
+                src="/livingRoom.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -64,7 +66,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy1.jpg"
+                src="/kitchenFromDoor.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -72,7 +74,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy2.jpg"
+                src="/kitchenDoor.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -80,7 +82,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy1.jpg"
+                src="/fridgeShot.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
@@ -88,23 +90,7 @@ export default function RealEstate() {
             </div>
             <div className={styles.columnImage}>
               <Image
-                src="/canopy1.jpg"
-                fill
-                alt="photo"
-                style={{ objectFit: 'contain' }}
-              />
-            </div>
-            <div className={styles.columnImage}>
-              <Image
-                src="/canopy7.jpg"
-                fill
-                alt="photo"
-                style={{ objectFit: 'contain' }}
-              />
-            </div>
-            <div className={styles.columnImage}>
-              <Image
-                src="/canopy1.jpg"
+                src="/meatRoom2Optimal.jpg"
                 fill
                 alt="photo"
                 style={{ objectFit: 'contain' }}
