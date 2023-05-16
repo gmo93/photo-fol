@@ -46,8 +46,6 @@ export default function RealEstate() {
                 style={{ objectFit: 'contain' }}
               />
             </div>
-          </div>
-          <div id={styles.middleColumn} className={styles.column}>
             <div className={styles.columnImage}>
               <Image
                 src="/canopy4.jpg"
@@ -80,8 +78,6 @@ export default function RealEstate() {
                 style={{ objectFit: 'contain' }}
               />
             </div>
-          </div>
-          <div className={styles.column}>
             <div className={styles.columnImage}>
               <Image
                 src="/canopy1.jpg"
