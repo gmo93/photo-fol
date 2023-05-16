@@ -12,7 +12,14 @@ export default function RealEstate() {
       <NavBar />
       <div className={styles.photoPage}>
         <div className={styles.portfolioContainer}>
-          <h1 className={styles.photoTitle}>Product</h1>
+          <div className={styles.productTitleBox}>
+          <h1 id={styles.productTitle} className={styles.photoTitle}>
+            Pro
+          </h1>
+          <h1 id={styles.productTitle} className={styles.photoTitle}>
+            duct
+          </h1>
+          </div>
           <div className={styles.column}>
             <div className={styles.columnImage}>
               <Image
@@ -46,8 +53,6 @@ export default function RealEstate() {
                 style={{ objectFit: 'contain' }}
               />
             </div>
-          </div>
-          <div id={styles.middleColumn} className={styles.column}>
             <div className={styles.columnImage}>
               <Image
                 src="/brownChairFront.jpg"
@@ -80,8 +85,6 @@ export default function RealEstate() {
                 style={{ objectFit: 'contain' }}
               />
             </div>
-          </div>
-          <div className={styles.column}>
             <div className={styles.columnImage}>
               <Image
                 src="/brownChairFront.jpg"

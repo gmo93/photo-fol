@@ -6,11 +6,12 @@ import NavBar from './components/NavBar';
 export default function Contact() {
   return (
     <div className={styles.container}>
-        <Menu />
-        <NavBar />
-      <h1 className={styles.photoTitle}>
-        CONTACT
-      </h1>
+      <Menu />
+      <NavBar />
+      <div className={styles.contactTitleBox}>
+        <h1 className={styles.contactTitle}>Con</h1>
+        <h1 className={styles.contactTitle}>Tact</h1>
+      </div>
       <div className={styles.contactBox}>
         <ContactForm />
       </div>

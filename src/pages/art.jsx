@@ -12,7 +12,7 @@ export default function Art() {
       <NavBar />
       <div className={styles.photoPage}>
         <div className={styles.portfolioContainer}>
-          <h1 className={styles.photoTitle}>Art</h1>
+          <h1 id = {styles.artTitle} className={styles.photoTitle}>Art</h1>
           <div className={styles.column}>
             <div className={styles.columnImage}>
               <Image
@@ -46,8 +46,6 @@ export default function Art() {
                 style={{ objectFit: 'contain' }}
               />
             </div>
-          </div>
-          <div id={styles.middleColumn} className={styles.column}>
             <div className={styles.columnImage}>
               <Image
                 src="/jordanPainting2.jpg"
@@ -80,8 +78,6 @@ export default function Art() {
                 style={{ objectFit: 'contain' }}
               />
             </div>
-          </div>
-          <div className={styles.column}>
             <div className={styles.columnImage}>
               <Image
                 src="/canopy1.jpg"
