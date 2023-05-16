@@ -85,7 +85,7 @@ export default function Home() {
                 alt="home page logo number 1"
               />
             </div>
-            <div className={styles.logo}>
+            <div className={styles.bio}>
               <h2>
                 My name is Grant and Im a product, real estate, and fashion
                 photographer.
