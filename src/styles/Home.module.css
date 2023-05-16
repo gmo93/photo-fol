@@ -350,8 +350,10 @@
 .contactBox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
 }
 .inputLabel {
   background-color: white;

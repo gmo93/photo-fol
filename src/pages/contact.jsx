@@ -8,7 +8,7 @@ export default function Contact() {
     <div className={styles.container}>
         <Menu />
         <NavBar />
-      <h1 id="contactHeader" className={styles.headerTest}>
+      <h1 className={styles.photoTitle}>
         CONTACT
       </h1>
       <div className={styles.contactBox}>

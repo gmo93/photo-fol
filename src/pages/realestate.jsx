@@ -35,6 +35,7 @@ export default function RealEstate() {
                 src="/livingRoom.jpg"
                 fill
                 alt="photo"
+                loading="lazy"
                 style={{ objectFit: 'contain' }}
               />
             </div>
@@ -43,6 +44,7 @@ export default function RealEstate() {
                 src="/fridgeShot.jpg"
                 fill
                 alt="photo"
+                loading="lazy"
                 style={{ objectFit: 'contain' }}
               />
             </div>
@@ -69,6 +71,7 @@ export default function RealEstate() {
                 src="/canopy1.jpg"
                 fill
                 alt="photo"
+                loading="lazy"
                 style={{ objectFit: 'contain' }}
               />
             </div>
@@ -77,6 +80,7 @@ export default function RealEstate() {
                 src="/canopy1.jpg"
                 fill
                 alt="photo"
+                loading="lazy"
                 style={{ objectFit: 'contain' }}
               />
             </div>
