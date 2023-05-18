@@ -101,7 +101,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.bio}>
+        {/* <div className={styles.bio}>
           <h2>
             My name is Grant and Im a product, real estate, and fashion
             photographer. If you click the hamburger menu in the top right, you will be able
@@ -109,7 +109,7 @@ export default function Home() {
             reach out to me about anything, you can do that through the contact
             for on there as well.
           </h2>
-        </div>
+        </div> */}
       </main>
     </>
   );
