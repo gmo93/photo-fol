@@ -12,7 +12,11 @@ export default function Art() {
       <NavBar />
       <div className={styles.photoPage}>
         <div className={styles.portfolioContainer}>
-          <h1 id = {styles.artTitle} className={styles.photoTitle}>Art</h1>
+          <div className={styles.artTitleBox}>
+            <h1 id={styles.artTitle} className={styles.photoTitle}>
+              Art
+            </h1>
+          </div>
           <div className={styles.column}>
             <div className={styles.columnImage}>
               <Image

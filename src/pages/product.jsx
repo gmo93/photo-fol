@@ -13,12 +13,12 @@ export default function RealEstate() {
       <div className={styles.photoPage}>
         <div className={styles.portfolioContainer}>
           <div className={styles.productTitleBox}>
-          <h1 id={styles.productTitle} className={styles.photoTitle}>
-            Pro
-          </h1>
-          <h1 id={styles.productTitle} className={styles.photoTitle}>
-            duct
-          </h1>
+            <h1 id={styles.productTitle} className={styles.photoTitle}>
+              Pro
+            </h1>
+            <h1 id={styles.productTitle} className={styles.photoTitle}>
+              duct
+            </h1>
           </div>
           <div className={styles.column}>
             <div className={styles.columnImage}>

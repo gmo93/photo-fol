@@ -460,6 +460,21 @@
     opacity: 1;
   }
 }
+
+/* PHOTO PAGE TITLES AND CONTAINERS */
+.titleBox {
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;
+}
+.titleContainer {
+  display: flex;
+  width: 20vw;
+}
 .photoTitle {
   transition: top 2s;
   font-size: 8em;
@@ -468,6 +483,17 @@
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   z-index: 30;
+}
+.contactTitleBox {
+  display: flex;
+  height: 20vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18vh;
+  margin-bottom: -25vh;
+  position: relative;
+  z-index: 2;
 }
 .contactTitle {
   transition: top 2s;
@@ -491,31 +517,69 @@
 #realEstateTitle {
   transform: translateX(-15vh);
 }
-#artTitle {
-  margin-top: 15vh;
-  margin-bottom: -18vh;
+.realEstateTitleBox {
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: -5vh;
 }
-#productTitle {
-  margin-top: 18vh;
-  margin-bottom: -15vh;
-  width: 30%;
-}
-#travelTitle {
-  margin-top: 85vh;
-  margin-bottom: -15vh;
+#realEstateTitle {
+  margin-top: 25vh;
+  margin-bottom: 0vh;
   width: 32%;
   font-size: 3em;
   rotate: 0deg;
-  margin-left: -15vw;
-  animation-name: pageLoad;
+  margin-left: 20vw;
+  margin-right: -25vw;
+  animation-name: realEstatePageLoad;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-@keyframes pageLoad {
+@keyframes realEstatePageLoad {
   0% {
     rotate: 0deg;
-    margin-top: 85vh;
-    margin-left: -15vw;
+    margin-bottom: 10vh;
+    margin-left: 20vw;
+    margin-right: -25vw;
+    font-size: 3em;
+    width: 48%;
+  }
+  100% {
+    rotate: -90deg;
+    margin-bottom: 0vh;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    font-size: 7em;
+    width: 30%;
+  }
+}
+
+.artTitleBox {
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15vh;
+}
+#artTitle {
+  margin-top: 8vh;
+  margin-bottom: -18vh;
+  position: relative;
+  margin-left: -50vw;
+  animation-name: artPageLoad;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes artPageLoad {
+  0% {
+    rotate: 0deg;
+    margin-top: 80vh;
+    margin-left: -50vw;
+    margin-bottom: -60vh;
     font-size: 3em;
     width: 32%;
   }
@@ -524,6 +588,7 @@
     margin-top: 18vh;
     margin-left: 0vw;
     font-size: 7em;
+    margin-bottom: -18vh;
     width: 30%;
   }
 }
@@ -536,6 +601,34 @@
   margin-top: 10vh;
   margin-bottom: -15vh;
 }
+#productTitle {
+  margin-top: 85vh;
+  margin-bottom: -15vh;
+  width: 32%;
+  font-size: 3em;
+  rotate: 0deg;
+  margin-left: -15vw;
+  animation-name: productPageLoad;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes productPageLoad {
+  0% {
+    rotate: 0deg;
+    margin-top: 40vh;
+    margin-left: -15vw;
+    font-size: 3em;
+    width: 48%;
+  }
+  100% {
+    rotate: -90deg;
+    margin-top: 25vh;
+    margin-left: 0vw;
+    font-size: 7em;
+    width: 30%;
+  }
+}
+
 .travelTitleBox {
   display: flex;
   height: 30vh;
@@ -544,30 +637,35 @@
   align-items: center;
   margin-bottom: -15vh;
 }
-.contactTitleBox {
-  display: flex;
-  height: 20vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  margin-top: 18vh;
-  margin-bottom: -25vh;
-  position: relative;
-  z-index: 2;
+#travelTitle {
+  margin-top: 85vh;
+  margin-bottom: -15vh;
+  width: 32%;
+  font-size: 3em;
+  rotate: 0deg;
+  margin-left: -15vw;
+  animation-name: travelPageLoad;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
-.titleBox {
-  height: 100vh;
-  width: 20vw;
-  display: flex;
-  position: fixed;
-  justify-content: flex-end;
-  align-items: center;
-  z-index: 10;
+@keyframes travelPageLoad {
+  0% {
+    rotate: 0deg;
+    margin-top: 90vh;
+    margin-left: -15vw;
+    font-size: 3em;
+    width: 32%;
+  }
+  100% {
+    rotate: -90deg;
+    margin-top: 18vh;
+    margin-left: 0vw;
+    font-size: 7em;
+    width: 30%;
+  }
 }
-.titleContainer {
-  display: flex;
-  width: 20vw;
-}
+/* END OF PHOTO AND PAGE TITLES */
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
 }

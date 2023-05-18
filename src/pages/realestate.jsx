@@ -12,9 +12,14 @@ export default function RealEstate() {
       <NavBar />
       <div className={styles.photoPage}>
         <div className={styles.portfolioContainer}>
-          <h1 id={styles.realEstateTitle} className={styles.photoTitle}>
-            Real Estate
-          </h1>
+          <div className={styles.realEstateTitleBox}>
+            <h1 id={styles.realEstateTitle} className={styles.photoTitle}>
+              Real
+            </h1>
+            <h1 id={styles.realEstateTitle} className={styles.photoTitle}>
+              Estate
+            </h1>
+          </div>
           <div className={styles.column}>
             <div className={styles.columnImage}>
               <Image
