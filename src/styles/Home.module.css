@@ -523,12 +523,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
-  margin-bottom: -5vh;
+  margin-top: 18vh;
+  margin-bottom: -15vh;
 }
 #realEstateTitle {
-  margin-top: 25vh;
-  margin-bottom: 0vh;
   width: 32%;
   font-size: 3em;
   rotate: 0deg;
@@ -563,11 +561,11 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-bottom: -15vh;
+  margin-bottom: -30vh;
+  margin-top: 15vh;
 }
 #artTitle {
-  margin-top: 80vh;
-  margin-bottom: -22vh;
+  margin-bottom: -25vh;
   position: relative;
   margin-left: -50vw;
   animation-name: artPageLoad;
@@ -577,7 +575,7 @@
 @keyframes artPageLoad {
   0% {
     rotate: 0deg;
-    margin-top: 80vh;
+    /* margin-top: 80vh; */
     margin-left: -50vw;
     margin-bottom: -60vh;
     font-size: 3em;
@@ -585,9 +583,9 @@
   }
   100% {
     rotate: -90deg;
-    margin-top: 30vh;
+    /* margin-top: 30vh; */
     margin-left: 0vw;
-    font-size: 7em;
+    font-size: 9em;
     margin-bottom: -35vh;
     width: 30%;
   }
@@ -598,11 +596,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
-  margin-bottom: -15vh;
+  margin-bottom: -30vh;
+  margin-top: 28vh;
 }
 #productTitle {
-  margin-top: 85vh;
   margin-bottom: -15vh;
   width: 32%;
   font-size: 3em;
@@ -615,31 +612,27 @@
 @keyframes productPageLoad {
   0% {
     rotate: 0deg;
-    margin-top: 40vh;
     margin-left: -15vw;
     font-size: 3em;
     width: 48%;
   }
   100% {
     rotate: -90deg;
-    margin-top: 25vh;
     margin-left: 0vw;
-    font-size: 7em;
+    font-size: 9em;
     width: 30%;
   }
 }
-
 .travelTitleBox {
   display: flex;
   height: 30vh;
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-bottom: -15vh;
+  margin-bottom: -30vh;
+  margin-top: 14vh;
 }
 #travelTitle {
-  margin-top: 85vh;
-  margin-bottom: -15vh;
   width: 32%;
   font-size: 3em;
   rotate: 0deg;
@@ -651,16 +644,14 @@
 @keyframes travelPageLoad {
   0% {
     rotate: 0deg;
-    margin-top: 90vh;
     margin-left: -15vw;
     font-size: 3em;
     width: 32%;
   }
   100% {
     rotate: -90deg;
-    margin-top: 18vh;
     margin-left: 0vw;
-    font-size: 7em;
+    font-size: 8em;
     width: 30%;
   }
 }
