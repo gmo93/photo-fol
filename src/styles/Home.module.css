@@ -566,8 +566,8 @@
   margin-bottom: -15vh;
 }
 #artTitle {
-  margin-top: 8vh;
-  margin-bottom: -18vh;
+  margin-top: 80vh;
+  margin-bottom: -22vh;
   position: relative;
   margin-left: -50vw;
   animation-name: artPageLoad;
@@ -585,10 +585,10 @@
   }
   100% {
     rotate: -90deg;
-    margin-top: 18vh;
+    margin-top: 30vh;
     margin-left: 0vw;
     font-size: 7em;
-    margin-bottom: -18vh;
+    margin-bottom: -35vh;
     width: 30%;
   }
 }
