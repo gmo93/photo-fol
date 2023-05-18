@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import {useEffect, useState} from 'react'
 import NavBar from './components/NavBar';
+import Menu from './components/Menu';
 
 export default function App({ Component, pageProps }: AppProps) {
     const [scrollTop, setScrollTop] = useState(0);
@@ -30,5 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
   //   };
   // });
 
-  return <Component {...pageProps} />
+  return <Component 
+  {...pageProps} />
 }
