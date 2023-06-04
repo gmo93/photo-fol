@@ -760,3 +760,12 @@
     transform: rotate(0deg);
   }
 }
+
+@media (min-width: 701px) {
+  .column {
+    width: 80vw;
+  }
+  .columnImage {
+    width: 33%;
+  }
+}
