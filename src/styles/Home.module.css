@@ -744,6 +744,24 @@
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
+  .columnImage {
+    width: 45% !important;
+    margin: 1vh 1vw;
+  }
+  .column {
+    justify-content: center;
+  }
+  .productTitleBox {
+    width: 50% !important;
+  }
+  .travelTitleBox {
+    width: 60% !important;
+  }
+  .realEstateTitleBox {
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: -15%;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -767,5 +785,25 @@
   }
   .columnImage {
     width: 33%;
+  }
+  .travelTitleBox {
+    width: 35%;
+    margin-top: 15vh;
+    margin-bottom: -20vh;
+  }
+  .productTitleBox {
+    width: 35%;
+    margin-top: 15vh;
+    margin-bottom: -20vh;
+  }
+  .artTitleBox {
+    width: 35%;
+    margin-top: 0vh;
+    margin-bottom: -8vh;
+  }
+  .realEstateTitleBox {
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: -5%;
   }
 }
